@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dashboard.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Dashboard</h1>
+  </header>
+
+  <section id="summarySection" class="summary-section">
+    <div class="card">
+      <h2>Expense Last Month</h2>
+      <div class="summary">Rs 10000</div>
+    </div>
+
+    <div class="card">
+      <h2>Expense This Month</h2>
+      <div class="summary">Rs 5000</div>
+    </div>
+
+    <div class="card">
+      <h2>Income Last Month</h2>
+      <div class="summary">Rs 30000</div>
+    </div>
+
+    <div class="card">
+      <h2>Income This Month</h2>
+      <div class="summary">Rs 35000</div>
+    </div>
+  </section>
+
+  <section id="dashboardSection" class="dashboard-section">
+    <div class="card">
+      <h2>Expense Info</h2>
+      <p>Enter your expense information below.</p>
+      <div id="new">
+        <h2>Add new</h2>
+
+        <div class="inputs">
+          <div class="inputitem">
+            <p style="width: 9rem">
+              Entry type:
+            </p>
+            <select id='itemType'>
+              <option value="0">Expense</option>
+              <option value="1">Income</option>
+            </select>
+          </div>
+          <div class="inputitem">
+            <p style="width: 9rem">Name:</p>
+            <input id="name" type="text" value="" placeholder="name" />
+          </div>
+          <div class="inputitem">
+            <p style="width: 9rem">Amount:</p>
+            <input value="0" id="amount" name="mod" type="number" placeholder="amount" />
+          </div>
+        </div>
+        <button class="button" onclick="addItem()">
+          Add Expense
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Recent Expenses</h2>
+      <ul class="recent-data">
+        <li>Travelling
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Recent Incomes</h2>
+      <ul class="recent-data">
+        <li>Salary
+      </ul>
+    </div>
+  </section>
+
+  <script src="dashboard.js"></script>
+</body>
+
+</html>
