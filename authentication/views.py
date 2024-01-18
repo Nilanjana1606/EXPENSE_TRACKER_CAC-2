@@ -1,3 +1,4 @@
+from anyio import get_current_task
 from django.shortcuts import redirect,render
 from django.http import HttpResponse
 from django.contrib.auth.models import User
@@ -65,7 +66,7 @@ def signup(request):
 
         # Email Address Confirmation Email
 
-        current_site=get_current_site(request)
+        current_site=get_current_task(request)
         email_subject="Confirm your email @ Expensy - Django Login !!"
         message2=render_to_string('email_confirmation.html',{
             'name':myuser.first_name,
