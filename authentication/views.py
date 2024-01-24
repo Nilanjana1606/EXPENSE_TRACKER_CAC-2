@@ -8,7 +8,7 @@ from Expense_tracker import settings
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.utils.http import urlsafe_base64_decode,urlsafe_base64_encode
-from django.utils.encoding import force_bytes, force_text
+from django.utils.encoding import force_bytes
 from . tokens import generate_token
 from django.core.mail import EmailMessage, send_mail
 
@@ -110,6 +110,7 @@ def signin(request):
     return render(request,"authentication/signin.html")
 
 def signout(request):
+    print("Sigining user out")
     logout(request)
     messages.success(request,"Logged out successfully !!")
     return redirect('home')
@@ -117,7 +118,7 @@ def signout(request):
 
 def activate(request,uidb64,token):
     try:
-        uid=force_text(urlsafe_base64_decode(uidb64))
+        uid=str(urlsafe_base64_decode(uidb64))
         myuser=User.objects.get(pk=uid)
 
     except(TypeError,ValueError,OverflowError,User.DoesNotExist):

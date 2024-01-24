@@ -25,11 +25,11 @@
     
     <h3>Hello {{fname}}</h3>
     <h4>You have succesfully logged in.</h4>
-    <button type="submit"><a href="/signout"></a>SignOut</a></button>
+    <a href="{% url 'signout' %}">SignOut</a>
 
     {% else %}
-    <button type="submit"><a href="/signup">SignUp</a></button>
-    <button type="submit"><a href="/signin"></a>SignIn</a></button>
+    <button type=""><a href="/signup">SignUp</a></button>
+    <button type=""><a href="/signin">SignIn</a></button>
    
     {% endif %}
 
