@@ -1,0 +1,5 @@
+EMAIL_USE_TLS=True
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_HOST_USER='shruti1289yadav@gmail.com'
+EMAIL_HOST_PASSWORD='Nilan123@'
+EMAIL_PORT=587

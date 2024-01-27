@@ -1,0 +1,101 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #5C8374;
+  color: #333;
+}
+
+header {
+  background-color: #092635;
+  color: #f6d3bb;
+  padding: 1rem;
+  text-align: center;
+}
+
+.summary-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+}
+
+.dashboard-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 1rem;
+  flex: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
+.button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.inputitem {
+  display: flex;
+  flex-direction: row;
+  font-weight: bolder;
+  font-size: large;
+  padding: 1%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #d4cbcb;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #fa9406;
+}
+
+#main {
+  margin-left: 200px;
+  font-size: 18px; 
+  padding: 0px 10px;
+}
