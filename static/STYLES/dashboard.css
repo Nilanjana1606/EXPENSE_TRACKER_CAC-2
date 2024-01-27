@@ -70,16 +70,32 @@ p {
   padding: 1%;
 }
 
-input,
-select,
-option {
-  padding: 2%;
-  border-radius: 5px;
-  margin: 2%;
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-button {
-  font-size: large;
-  border-radius: 5px;
-  padding: 1%;
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #d4cbcb;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #fa9406;
+}
+
+#main {
+  margin-left: 200px;
+  font-size: 18px; 
+  padding: 0px 10px;
 }
