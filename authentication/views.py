@@ -139,3 +139,6 @@ def aboutus(request):
 
 def contact(request):
     return render(request,"authentication/contact.html")
+
+def helpus(request):
+    return render(request,"authentication/helpus.html")

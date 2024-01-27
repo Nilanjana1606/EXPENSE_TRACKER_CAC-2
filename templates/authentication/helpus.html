@@ -1,0 +1,36 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Us - Expense Tracker</title>
+    <link rel="stylesheet" href="{% static 'STYLES/helpus.css' %}">
+</head>
+<body>
+    <div class="helpus-container">
+        <h2>Help Us Improve!</h2>
+        <p>We are constantly working to improve our expense tracker application. Your feedback is important to us.</p>
+        <p>If you have any suggestions, comments, or encounter any issues while using our app, please feel free to reach out to us using the form below:</p>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

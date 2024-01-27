@@ -10,4 +10,5 @@ urlpatterns = [
     path('activate/<uidb64>/<token>',views.activate,name='activate'),
     path('aboutus',views.aboutus,name="ABOUT US"),
     path('contact',views.contact,name="CONTACT US"),
+    path('helpus',views.helpus,name="HELP ?"),
 ]
