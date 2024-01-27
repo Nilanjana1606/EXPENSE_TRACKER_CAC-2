@@ -62,7 +62,7 @@ def signup(request):
         message="Hello " + myuser.first_name+"!! \n" + "Welcome to Expensy! \n Thank you for visiting our website \n We have also sent you a confirmation mail, please confirm your email address in order to activate your account. \n\n Thanking You\n Nilanjana Dey"
         from_email=settings.EMAIL_HOST_USER
         to_list=[myuser.email]
-        send_mail(subject,message,from_email, to_list, fail_silently=True )
+        # send_mail(subject,message,from_email, to_list, fail_silently=True )
 
         # Email Address Confirmation Email
 
@@ -74,14 +74,14 @@ def signup(request):
             'uid':urlsafe_base64_encode(force_bytes(myuser.pk)),
             'token': generate_token.make_token(myuser)
         })
-        email= EmailMessage(
-            email_subject,
-            message2,
-            settings.EMAIL_HOST_USER,
-            [myuser.email],
-        )
-        email.fail_silently=True
-        email.send()
+        # email= EmailMessage(
+        #    email_subject,
+        print(message2)
+        #    settings.EMAIL_HOST_USER,
+        #    [myuser.email],
+        #)
+        #email.fail_silently=True
+        #email.send()
 
 
         return redirect('signin')
@@ -132,3 +132,10 @@ def activate(request,uidb64,token):
     
     else:
         return render(request,'activation_failed.html')
+    
+
+def aboutus(request):
+    return render(request,"authentication/aboutus.html")
+
+def contact(request):
+    return render(request,"authentication/contact.html")
