@@ -3,6 +3,6 @@ from . import views
 
 urlpatterns = [
     path('dashboard',views.menu,name="dashboard"),
-    path('calender',views.calendar,name="calender")
+    path('calender',views.calendar,name="calender"),
 
 ]
