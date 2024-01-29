@@ -206,7 +206,7 @@ header {
   padding-bottom: 80px;
   padding-left: 5%;
   padding-right: 5%;
-  background-color: #f7f7f7;
+  background-color: #551919;
   text-align: center;
 }
 
@@ -233,7 +233,7 @@ header {
   position: absolute;
   top: 44%;
   width: 100%;
-  color: white;
+  color: rgb(70, 24, 24);
 }
 
 .text-contents {
@@ -241,7 +241,7 @@ header {
   display: inline-block;
   margin-top: 15px;
   font-size: 15px;
-  color: #b3aeb5;
+  color: #4c1468;
 }
 
 .heading h3 {
