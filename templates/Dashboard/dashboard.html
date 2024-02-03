@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="{% static 'STYLES/dashboard.css' %}">
   <title>Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -16,52 +17,52 @@
     <img src="{% static 'IMAGES/Logo.jpg' %}" alt="LOGO" width="250" height="250">
     <a href="#">Dashboard</a>
     <a href="#">Expense/Income chart</a>
-    <a href="#">Calender</a>
-    <a href="#">Account</a>
-    <a href="#">Log Out</a>
+    <a href="{% url 'calender' %}">Calender</a>
+    <a href="{% url 'my_profile' %}">Account</a>
+  
 
   </div>
-
+  
   <div id="main">
-
+     
     <div class="w3-teal">
-
-
+     
+      
       <header>
         <h1>Dashboard</h1>
       </header>
     </div>
-
-
+       
+      
     <section id="summarySection" class="summary-section">
       <div class="card">
         <h2>Expense Last Month</h2>
-        <div class="summary">Rs 10000</div>
+        <div class="summary">Rs 0</div>
       </div>
-
+          
       <div class="card">
         <h2>Expense This Month</h2>
-        <div class="summary">Rs 5000</div>
+        <div class="summary">Rs 0</div>
       </div>
-
+        
       <div class="card">
         <h2>Income Last Month</h2>
-        <div class="summary">Rs 30000</div>
+        <div class="summary">Rs 0</div>
       </div>
-
+        
       <div class="card">
         <h2>Income This Month</h2>
-        <div class="summary">Rs 35000</div>
+        <div class="summary">Rs 0</div>
       </div>
     </section>
-
+    
     <section id="dashboardSection" class="dashboard-section">
       <div class="card">
         <h2>Expense Info</h2>
         <p>Enter your expense information below.</p>
         <div id="new">
           <h2>Add new</h2>
-
+            
           <div class="inputs">
             <div class="inputitem">
               <p style="width: 9rem">
@@ -86,24 +87,27 @@
           </button>
         </div>
       </div>
-
+          
       <div class="card">
         <h2>Recent Expenses</h2>
         <ul class="recent_data_expense">
-          <li>Travelling
         </ul>
       </div>
-
+        
       <div class="card">
         <h2>Recent Incomes</h2>
         <ul class="recent_data_income">
-          <li>Salary
         </ul>
       </div>
     </section>
 
-    <script src="{% static 'js/dashboard.js' %}"></script>
+    <div class="card">
+      <h2>Expense Summary Chart</h2>
+      <canvas id="expenseChart"></canvas>
+    </div>
 
+    <script src="{% static 'js/dashboard.js' %}"></script>
+    
 </body>
 
 </html>
