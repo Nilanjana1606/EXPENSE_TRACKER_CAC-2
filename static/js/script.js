@@ -19,14 +19,8 @@ const holidays = [
       hdate: "26-01-2024",
       holiday: "Republic Day",
     },
-    {
-      hdate: "05-02-2024",
-      holiday: "Thai Poosam",
-    },
-    {
-      hdate: "22-03-2024",
-      holiday: "Telugu New Year Day",
-    },
+   
+    
     {
       hdate: "01-04-2024",
       holiday: "Annual closing of Accounts for Commercial Banks and Co-operative Banks",
@@ -41,7 +35,7 @@ const holidays = [
     },
     {
       hdate: "14-04-2024",
-      holiday: "Tamil New Years Day and Dr.B.R.Ambedkars Birthday",
+      holiday: " Dr.B.R.Ambedkars Birthday",
     },
     {
       hdate: "22-04-2024",
@@ -79,10 +73,7 @@ const holidays = [
       hdate: "02-10-2024",
       holiday: "Gandhi Jayanthi",
     },
-    {
-      hdate: "23-10-2024",
-      holiday: "Ayutha Pooja",
-    },
+    
     {
       hdate: "24-10-2024",
       holiday: "Vijaya Dasami",
