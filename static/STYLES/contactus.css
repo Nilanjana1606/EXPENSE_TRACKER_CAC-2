@@ -18,7 +18,7 @@ body{
     display: flex;
     padding: 20px 50px;
     align-items: center;
-    background: #2A2A2C;
+    background: #8d8db6;
 }
 nav{
     flex: 1;
@@ -38,7 +38,7 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    border: 1px solid #308D46;
+    border: 1px solid #3f308d;
     padding: 7px 22px;
     margin: 10px 15px;
     box-shadow: 4px 4px 5.5px #131417;
@@ -47,7 +47,7 @@ nav ul li{
 }
 a{
     text-decoration: none;
-    color: #308D46;
+    color: #55308d;
     font-size: 15.5px;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
@@ -70,7 +70,7 @@ nav ul li:hover{
     border-radius: 1rem;
     margin-top: 2rem;
     font-family: 'Poppins', sans-serif;
-    color: #308d46;
+    color: #30878d;
     display: flex;
     align-items: center;
     font-weight: 800;
@@ -117,7 +117,7 @@ hr{
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgb(230, 67, 102);
+        background-color: #fccc63;
         border-radius: 0.5vw;
     }
     .linkedin{
@@ -147,7 +147,28 @@ hr{
         height: 20vh;
         
     }
-    #youtube{
+
+    .facebook{
+        width: 25%;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(5, 106, 248);
+        border-radius: 0.5vw;
+    }
+
+    .facebook:hover{
+        opacity: 0.7;
+    }
+
+    .facebook_img {
+        width: 10vw;
+        height: 20vh;
+        
+    }
+
+    /* #youtube{
         margin-top: 2vh;
         font-family: 'Poppins',sans-serif;
         text-align: center;
@@ -186,9 +207,9 @@ hr{
     }
     .youtube3:hover{
         opacity: 0.7;
-    }
+    } */
     .footer1 {
-        background-color: #308d46;
+        background-color: #8d8db6;
         color: white;
         height: 10vh;
         margin: 0px;
