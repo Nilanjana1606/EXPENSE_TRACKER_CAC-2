@@ -13,6 +13,14 @@ header {
   text-align: center;
 }
 
+img {
+  border-radius: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  
+}
+
 .summary-section {
   display: flex;
   justify-content: space-around;
