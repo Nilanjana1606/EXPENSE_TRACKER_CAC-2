@@ -45,3 +45,10 @@ Explore the analytics section to gain insights into your financial habits and ma
 
 ## Enjoy better financial management and control over your expenses!
 
+## Contributors : 
+
+Nilanjana Dey
+
+Manish Kumar
+
+Hiranlal H
